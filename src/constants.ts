@@ -71,14 +71,14 @@ export class Constants {
    * For example, the state "Error" may apply to any of: `['error', 'stalledDL', 'unknown', etc...]`
    */
   static TORRENT_STATE_MAPPING = {
-    'Downloading': ['downloading', 'pausedUP'],
-    'Seeding': ['uploading', 'stalledUP', 'forcedUP'],
-    'Completed': ['uploading', 'stalledUP', 'forcedUP'],
-    'Resumed': ['uploading', 'stalledUP', 'forcedUP'],
-    'Paused': ['pausedUP', 'pausedDL'],
-    'Active': ['uploading', 'downloading', 'metaDL', 'forcedUP', 'forcedDL', 'forcedMetaDL'],
-    'Inactive': ['pausedUP', 'pausedDL', 'queuedUP', 'queuedDL', 'stalledUP'],
-    'Stalled': ['stalledUP', 'stalledDL'],
-    'Errored': ['error', 'missingFiles', 'unknown', 'stalledDL'],
+    '下载中': ['downloading', 'pausedUP'],
+    '做种中': ['uploading', 'stalledUP', 'forcedUP'],
+    '已完成': ['uploading', 'stalledUP', 'forcedUP'],
+    '恢复': ['uploading', 'stalledUP', 'forcedUP'],
+    '暂停': ['pausedUP', 'pausedDL'],
+    '活动': ['uploading', 'downloading', 'metaDL', 'forcedUP', 'forcedDL', 'forcedMetaDL'],
+    '不活动': ['pausedUP', 'pausedDL', 'queuedUP', 'queuedDL', 'stalledUP'],
+    '停滞': ['stalledUP', 'stalledDL'],
+    '错误': ['error', 'missingFiles', 'unknown', 'stalledDL'],
   }
 }
